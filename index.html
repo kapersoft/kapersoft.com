@@ -1,115 +1,214 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE HTML>
+<html>
 <head>
-	<meta charset="utf-8">
-	<meta name="description" content="">
-	<title>Jan Willem Kaper - Allround ontwikkelaar</title>
-	<meta name="author" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-	<meta name="keywords" content="developer, webdeveloper, ontwikkelaar, software, web, php, javascript, visual basic, clarion, html, css, c#, scoutingleider, amersfoort, jan, willem, kaper, kapersoft" />
-	<meta name="description" content="All-round softwareontwikkelaar met focus eenvoud en gebruiksvriendelijkheid uit Amersfoort." />
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/skeleton.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="icon" type="image/png" href="images/favicon.png">
+    <title>Jan Willem Kaper</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 </head>
-
 <body>
-<div id="loader-overlay"></div>
-<div id="wrapper">
-	<header id="top">
-		<div class="inner container">
-			<div id="top-titles">
-				<h1>Jan Willem Kaper</h1>
-				<div>
-					<h2>Software ontwikkelaar</h2></div>
-			</div>
-		</div>
-	</header>
-	<section id="about">
-		<div class="inner container">
-			<div class="row" id="about">
-				<div class="three columns section-title">
-					<h2>Jan Willem Kaper</h2>
-				</div>
-				<div class="nine columns" id="about-list">
-					<p>
-						Hallo! Ik ben <span class="">Jan Willem</span>, <strong>web-ontwikkelaar</strong> (PHP, JavaScript, Visual Basic, Clarion, HTML, CSS), <strong>desktop-ontwikkelaar </strong> (C#, Visual Basic, Clarion), <strong>Podio-guru</strong> en <a href="http://www.hiawatha.nl">Scoutingleider</a> uit Amersfoort.</a>
-					</p>
-					<p>
-					</p>
-					<p>
-						Ik ontwikkel <strong>applicaties</strong> voor procesgestuurde organisatiees, <strong>slimme datakoppelingen</strong> voor talrijke systemen, en intelligente <strong>document-oplossingen</strong> met focus op eenvoud en gebruiks&shy;vriendelijkheid. Ik maar daarbij gebruik van de laatste tools & technieken samen met 20 jaar enthousiasme voor het vak.
-					</p>
-					<p>
-						Ben je op zoek naar een <strong>all-round ontwikkelaar</strong>? <a href="index.html#contact" title="Kontakt">Neem snel contact op!</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="work">
-		<div class="inner container">
-			<div class="row">
-				<div class="three columns section-title">
-					<h2>Mijn werk</h2>
-				</div>
-				<div class="nine columns">
-					<div class="work-item">
-						<span>(Wordt nog aangevuld)</span>
-						<a href="" title="" target="blank"><img src=""></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="contact">
-		<div class="inner container">
-			<div class="row">
-				<div class="three columns section-title">
-					<h2>Contact</h2>
-				</div>
-				<div class="nine columns" id="about-list">
-					<p>
-						Voor werk, een project of iets te vragen:
-						<br/>
-						<a href="mailto:kapersoft@gmail.com" title="In contact met Jan Willem">kapersoft@gmail.com</a>
-						<br/>
-						<br/>
-						<br/>
-						<br/> Verder ben ik te vinden op:
-						<br/>
-						<span>
-                          <a href="https://github.com/kapersoft" title="GitHub" target="blank">GitHub</a>
-                          <a href="https://www.linkedin.com/in/jwkaper" target="blank">LinkedIn</a>
-                          <a href="https://open.spotify.com/user/jwpk" target="blank">Spotify</a>
-                          <a href="https://www.facebook.com/jwkaper" target="blank">Facebook</a>
-                        </span>
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="nine columns offset-by-three">
-					Deze site is ontwikkeld en tot u gebracht met behulp van:
-					<br/>
-					<a href="http://getskeleton.com" title="Skeleton Framework" target="blank">Skeleton Framework</a>
-					<br/>
-					<a href="https://www.ubuntu.com" title="Ubuntu Server 16.10" target="blank">Ubuntu Server 16.04 LTS</a>
-					<br/>
-					<a href="https://nginx.org" title="NGINX" target="blank">Nginx</a>
-					<br/>
-				</div>
-			</div>
-		</div>
-	</section>
-</div>
-</body>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/scripts.js"></script>
 
+<!-- Header {{{ -->
+<div id="header">
+
+    <div class="top">
+
+        <!-- Logo -->
+        <div id="logo">
+            <span class="image avatar48"><img src="images/avatar.jpg" alt="avatar" /></span>
+            <h1 id="title">
+                <a href="#top" class="scrolly">Jan Willem Kaper</a>
+            </h1>
+            <p>Software Engineer</p>
+        </div>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <!--
+
+                Prologue's nav expects links in one of two formats:
+
+                1. Hash link (scrolls to a different section within the page)
+
+                   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+                2. Standard link (sends the user to another page/site)
+
+                   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+              -->
+            <ul>
+                <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About me</span></a></li>
+                <li><a href="#web-development" id="web-development-link" class="skel-layers-ignoreHref"><span class="icon fa-safari">Web development</span></a></li>
+                <li><a href="#citrix-podio-sharefile" id="citrix-podio-sharefile-link" class="skel-layers-ignoreHref"><span class="icon fa-users">Citrix Podio & ShareFile</span></a></li>
+                <li><a href="#document-automation" id="document-automation-link" class="skel-layers-ignoreHref"><span class="icon fa-file-text-o">Document automation</span></a></li>
+                <li><a href="#open-source-development" id="open-source-development-link" class="skel-layers-ignoreHref"><span class="icon fa-cloud">Open source development</span></a></li>
+                <li><a href="#social-life" id="social-life-link" class="skel-layers-ignoreHref"><span class="icon fa-beer">Social life</span></a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="bottom">
+
+        <!-- Social Icons -->
+        <ul class="icons">
+            <li><a href="https://twitter.com/jwpk" target="_blank" rel="noopener noreferrer" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://github.com/kapersoft" target="_blank" rel="noopener noreferrer" class="icon fa-github"><span class="label">Github</span></a></li>
+            <li><a href="https://www.linkedin.com/in/jwkaper/" target="_blank" rel="noopener noreferrer" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="mailto:kapersoft@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+        </ul>
+
+    </div>
+
+</div>
+<!-- }}} Header -->
+
+<!-- Main -->
+<div id="main">
+
+    <!-- Intro {{{ -->
+    <section id="top" class="one cover">
+        <section id="intro">
+            <header>
+                <a href="#web-development" class="scrolly"><span class="avatar"><img src="images/avatar.jpg" alt="avatar" /></span></a>
+                <h2>
+                    Welcome!
+                </h2>
+                <p>I am <a href="https://github.com/kapersoft">Jan Willem Kaper</a>.</p>
+                <p>Software engineer from <a href="https://en.wikipedia.org/wiki/Amersfoort" target="_blank" rel="noopener noreferrer">Amersfoort</a>.</p>
+            </header>
+        </section>
+    </section>
+    <!-- }}} Intro -->
+
+    <!-- Web development {{{-->
+    <section id="web-development" class="two">
+        <div class="container">
+
+            <header>
+                <h2><a class="section-title" href="#web-development"><span class="icon fa-safari"></span>Web development</a></h2>
+            </header>
+
+            <p>For a long time I was a desktop-only developer. I knew some HTML and basic JavaScript, but that was it. The last years I am more focused on web-development. I learned to use PHP and was introduced to <a href="https://laravel.com" target="_blank" rel="noopener noreferrer">Laravel</a>. Later I got to know JavaScript better and learned to use <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">Vue.JS</a>.</p>
+            <p>Now, I am a web developer and I like it!</p>
+
+        </div>
+
+    </section>
+    <!-- }}} Web development-->
+
+    <!-- Citrix Podio {{{ -->
+    <section id="citrix-podio-sharefile" class="three">
+        <div class="container">
+
+            <header>
+                <h2><a class="section-title" href="#citrix-podio-sharefile"><span class="icon fa-users"></span>Citrix Podio & ShareFile</a></h2>
+            </header>
+
+            <p>A few years ago I was introduced to <a href="https://podio.com" target="_blank" rel="noopener noreferrer">Podio</a> and was immediately overwhelmed by its potential. Podio is a collaborating tool developed in Copenhagen (Denmark), acquired by  <a href="https://citrix.com" target="_blank" rel="noopener noreferrer">Citrix</a> in 2012 and conquered the world since.</p>
+
+            <p>Podio is an extremely flexible and highly customizable online hub for work and communication. With content, conversations, and processes structured and together in one tool. Together with  <a href="http://globiflow.com" target="_blank" rel="noopener noreferrer">Globiflow</a> and  <a href="https://sharefile.com" target="_blank" rel="noopener noreferrer">Citrix Sharefile</a> it's one of the best tools out there.</p>
+
+            <span class="image screenshot"><img src="images/podio.png" alt="Podio"/></span>
+
+            <p>The last few years I helped companies and teams with getting the best use of their Podio implementation. I used <a href="https://globiflow.com" target="_blank" rel="noopener noreferrer">Globiflow</a>, <a href="https://sharefile.com" target="_blank" rel="noopener noreferrer">ShareFile</a> and other tools to create advanced web application helping teams to work better and make employees happy.</p>
+        </div>
+    </section>
+    <!-- }}} Podio -->
+
+    <!-- Document automation {{{ -->
+    <section id="document-automation" class="four">
+        <div class="container">
+
+            <header>
+                <h2><a class="section-title" href="#document-automation"><span class="icon fa-file-text-o"></span>Document automation</a></h2>
+            </header>
+
+            <p>Back in 2000 I was an intern at a small firm. They asked to create a database for storing their technical documents. It was a first step in a world that keeps me busy till today.</p>
+
+            <p>I have created several software products to help customers to automate their document workflow cycle. Starting with the creation of documents in Microsoft Office, followed by intelligent tagging, storing, and printing documents.</p>
+
+        </div>
+    </section>
+    <!-- }}} Document management -->
+
+    <!-- Open source development {{{ -->
+    <section id="open-source-development" class="five">
+        <div class="container">
+
+            <header>
+                <h2><a class="section-title" href="#open-source-development"><span class="icon fa-cloud"></span>Open source development</a></h2>
+            </header>
+
+            <p>In 2015 I started contributing open source projects. It's a good way to use my existing knowledge and skills by helping others and learn new skills. My open-source contributions can be found on my <a href="https://github.com/kapersoft" target="_blank" rel="noopener noreferrer">GitHub profile</a>. Fun fact: this site is also <a href="https://github.com/kapersoft/kapersoft.com" target="_blank" rel="noopener noreferrer">open source</a> so others can use as a template for their own site.</p>
+
+            <h3><a href="https://github.com/kapersoft/sharefile-api" target="_blank" rel="noopener noreferrer">kapersoft/sharefile-api</a></h3>
+            <p>This is a package created for the PHP-ecosystem. I developed it so other developers can integrate ShareFile into their product. With this package you can up-/download, move, copy, delete files and folders in ShareFile</p>
+            <span class="image screenshot"><img src="images/sharefile-api-code-example.png" alt="sharefile-api code example"/></span>
+
+            <h3><a href="https://github.com/kapersoft/flysystem-sharefile" target="_blank" rel="noopener noreferrer">kapersoft/flysystem</a></h3>
+            <p>This package contains a <a href="https://flysystem.thephpleague.com" target="_blank" rel="noopener noreferrer">FlySystem</a> adapter implementation for my <a href="https://github.com/kapersoft/sharefile-api" target="_blank" rel="noopener noreferrer">kapersoft/sharefile-api</a> package.</p>
+
+        </div>
+    </section>
+    <!-- }}} Document management -->
+
+    <!-- Social life {{{ -->
+    <section id="social-life" class="six">
+        <div class="container">
+
+            <header>
+                <h2><a class="section-title" href="#social-life"><span class="icon fa-beer"></span>Social life</a></h2>
+            </header>
+
+            <p>In my free time I volunteer at my local Scouting group, visit festival and like to hang out in a bar of pub.</p>
+
+            <h3>Scouting leader</h3>
+            <p>Every saturday I am a Cub Scout Leader at my local <a href="http://hiawatha.nl">Scouting group</a>. I teach children in the age from 7 to 11 the Scouting Way inspired by <a href ="https://en.wikipedia.org/wiki/Robert_Baden-Powell,_1st_Baron_Baden-Powell" target="_blank" rel="noopener noreferrer">Robert Baden-Powell</a>. My Scouting group is member of the Dutch National Scouting organisation (<a href="https://www.scouting.nl/english" target="_blank" rel="noopener noreferrer">Scouting Nederland</a>)  and is open for everyone irrespective of belief, race, skin colour, handicap, political context, sexual preference, or age.</p>
+
+            <h3>My music</h3>
+            <p>My taste of music can be found at my <a href="https://open.spotify.com/user/jwpk" target="_blank" rel="noopener noreferrer">Spotify</a> or <a href="https://www.last.fm/user/Kappie81" target="_blank" rel="noopener noreferrer">Last.FM</a> account.</p>
+
+
+        </div>
+    </section>
+    <!-- }}} Social life -->
+
+</div>
+
+<!-- Footer {{{-->
+<div id="footer">
+
+    <ul class="icons">
+        <li><a href="https://twitter.com/jwpk" target="_blank" rel="noopener noreferrer" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="https://github.com/kapersoft" target="_blank" rel="noopener noreferrer" class="icon fa-github"><span class="label">Github</span></a></li>
+        <li><a href="https://www.linkedin.com/in/jwkaper" target="_blank" rel="noopener noreferrer" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        <li><a href="mailto:kapersoft@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+    </ul>
+
+    <!-- Copyright -->
+    <ul class="copyright">
+        <li>&copy; Jan Willem Kaper. All rights reserved.</li><li>Design based on: <a href="http://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a> and <a href="https://github.com/rhysd/rhysd.github.io" target="_blank" rel="noopener noreferrer">@rhysd</a></li>
+    </ul>
+
+</div>
+<!-- }}} Footer -->
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollzer.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+<script>
+    if ('addEventListener' in window) {
+        window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+        document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+    }
+</script>
+</body>
 </html>
