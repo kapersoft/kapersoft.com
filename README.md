@@ -1,3 +1,3 @@
 # kapersoft.com
 
-http://kapersoft.com
+https://kapersoft.com
